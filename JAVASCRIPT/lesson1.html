@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>DOM Practice</title>
+  <style>
+    body { font-family: Arial; padding: 20px; }
+    .card { border: 1px solid #ccc; padding: 16px; border-radius: 12px; max-width: 500px; }
+    button { padding: 10px 14px; border-radius: 10px; border: 1px solid #ccc; cursor: pointer; }
+    input { padding: 10px; border-radius: 10px; border: 1px solid #ccc; width: 100%; }
+    .row { margin-top: 12px; }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1 id="title">Welcome</h1>
+    <img src="download.jpg" id = "image" alt="welcome" width="350" height="500">
+    
+    <p id="message">This page will become interactive soon.</p>
+
+    <div class="row">
+      <button id="changeBtn" onclick = "buttonClicked()">Change Text</button>
+      <button id="colorBtn" onclick = "buttonClicked2()">Change Color</button>
+      <button onclick="showAlert()">Show Alert</button>
+      <button onclick="showConfirm()">Show Confirm</button>
+      <button onclick="showPrompt()">Show Prompt</button>
+    </div>
+
+
+    <div class="row">
+      <h3 style="color: #667eea; margin-bottom: 10px;">📝 User Form (Submit to Display):</h3>
+      <form id="userForm" style="background: #f8f9fa; padding: 15px; border-radius: 8px;">
+        <div style="margin-bottom: 10px;">
+          <label style="display: block; margin-bottom: 5px; font-weight: bold;">Full Name *</label>
+          <input id="fullName" type="text" required placeholder="Enter your full name" />
+        </div>
+        <div style="margin-bottom: 10px;">
+          <label style="display: block; margin-bottom: 5px; font-weight: bold;">Email *</label>
+          <input id="email" type="email" required placeholder="your@email.com" />
+        </div>
+        <div style="margin-bottom: 10px;">
+          <label style="display: block; margin-bottom: 5px; font-weight: bold;">Favorite Color</label>
+          <select id="favoriteColor" style="padding: 12px; border-radius: 10px; border: 2px solid #ddd; width: 100%; font-size: 14px;">
+            <option value="Red">Red</option>
+            <option value="Blue">Blue</option>
+            <option value="Green">Green</option>
+            <option value="Purple">Purple</option>
+            <option value="Orange">Orange</option>
+          </select>
+        </div>
+        <button type="submit" style="width: 100%; margin: 0;">Submit Form</button>
+      </form>
+      <div id="userDisplay" style="margin-top: 15px;"></div>
+    </div>
+
+
+
+
+    <div class="row">
+      <input id="nameInput" type="text" placeholder="Type your name..." />
+      <p id="output"></p> 
+
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
