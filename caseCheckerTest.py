@@ -9,7 +9,8 @@ from caseChecker import caseCheck
     ("HELLO", "upperCase"),
     ("heLLo", "mixedCase"),
     ("hellO", "mixedCase"),
-    ("Hello World", "mixedCase")
+    ("Hello World", "mixedCase"),
+    (" ", "enter string! ")
     
 ])
 def test_caseCheck(string, expected):

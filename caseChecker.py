@@ -7,7 +7,6 @@ def caseCheck(string):
     
     for i in range(length):
         if string[i] == string[i].upper():
-            print("test")
             upperChar = True
         else:
             lowerChar = True
